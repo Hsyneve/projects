@@ -1,0 +1,284 @@
+ body {
+        font-family: Century Gothic, sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .fade-enter-active{
+transition: opacity .5s
+    }
+     .fade-leave-active{
+        transition: opacity .5s
+    }
+    .fade-enter,.fade-leave-active 
+    {
+       opacity: 0 
+    }
+
+    .datepick {
+        margin: 50px auto;
+        width: 350px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: 5px 5px 10px grey;
+        border-radius: 0 0 0 30px;
+        position: relative;
+        background: radial-gradient(ellipse at bottom, #1b2735 0, #090a0f 100%);
+        overflow: hidden;
+        ;
+  display: none;
+    }
+    
+    .title {
+        width: 350px;
+        height: 100px;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .title a {
+        display: block;
+        float: left;
+    }
+    
+    .left,
+    .right {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #685454;
+    }
+    
+    #date-select {
+        width: 250px;
+        line-height: 50px;
+        height: 50px;
+    }
+    
+    .week {
+        width: 350px;
+        height: 50px;
+        overflow: hidden;
+    }
+    
+    .week span {
+        display: block;
+        width: 50px;
+        height: 50px;
+        float: left;
+        color: #a09898;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .days span {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        margin: 5px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        cursor: pointer;
+    }
+    
+    .days {
+        overflow: hidden;
+    }
+    
+    .choose {
+        border-radius: 20px;
+        background: #5b1e2a;
+        color: #fff!important;
+    }
+    
+    .hid {
+        color: #a09898!important;
+    }
+    
+    #current {
+        right: 30px;
+        position: absolute;
+        bottom: 20px;
+        display: block;
+        width: 48px;
+        height: 26px;
+        color: #2a1d21;
+        font-size: 14px;
+        text-align: center;
+        line-height: 26px;
+        background: #535351;
+        border-radius: 6px;
+        font-family: 微软雅黑;
+    }
+    
+    #sure {
+        right: 100px;
+        position: absolute;
+        bottom: 20px;
+        display: block;
+        width: 48px;
+        height: 26px;
+        color: #2a1d21;
+        font-size: 14px;
+        text-align: center;
+        line-height: 26px;
+        background: #535351;
+        border-radius: 6px;
+        font-family: 微软雅黑;
+    }
+    
+    .months,
+    .years {
+        overflow: hidden;
+        margin-left: -10px;
+    }
+    
+    .months span {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        margin-left: 20px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    
+    .years span {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        margin-left: 20px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        border-radius: 30px;
+    }
+    
+    .years span:hover {
+        color: #fff;
+        background: #5b1e2a;
+    }
+    
+    .months span:hover {
+        color: #fff;
+        background: #5b1e2a;
+    }
+    
+    .days span:hover {
+        color: #fff;
+        background: #5b1e2a;
+    }
+    
+    #date-frame {
+        position: absolute;
+        width: 1050px;
+        height: 320px;
+        left: -350px;
+        top: 0px;
+    }
+    
+    .real-date-left,
+    .real-date-right,
+    .real-date {
+        width: 350px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    #date-bg {
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+        height: 320px;
+    }
+    
+    .star1:after,
+    .star2:after,
+    .star3:after {
+        content: "";
+        display: block;
+        top: 400px;
+        left: 0px;
+    }
+    
+    .star1,
+    .star1:after {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        background: #fff;
+        /*box-shadow: 30px 30px #fff, 140px 240px #fff, 50px 50px #fff;*/
+    }
+    
+    .star2,
+    .star2:after {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        border-radius: 1px;
+        background: #fff;
+        /*box-shadow: 60px 370px #fff, 14px 340px #fff, 70px 320px #fff;*/
+    }
+    
+    .star3,
+    .star3:after {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #fff;
+        /*box-shadow: 210px 270px #fff, 100px 130px #fff, 310px 50px #fff;*/
+    }
+    
+    .star1 {
+        animation: starmove 30s linear infinite;
+        -moz-animation: starmove 30s linear infinite;
+        /* Firefox */
+        -webkit-animation: starmove 30s linear infinite;
+        /* Safari 和 Chrome */
+        -o-animation: starmove 30s linear infinite;
+        /* Opera */
+    }
+    
+    .star2 {
+        animation: starmove 50s linear infinite;
+        -moz-animation: starmove 50s linear infinite;
+        /* Firefox */
+        -webkit-animation: starmove 50s linear infinite;
+        /* Safari 和 Chrome */
+        -o-animation: starmove 50s linear infinite;
+        /* Opera */
+    }
+    
+    .star3 {
+        animation: starmove 80s linear infinite;
+        -moz-animation: starmove 80s linear infinite;
+        /* Firefox */
+        -webkit-animation: starmove 80s linear infinite;
+        /* Safari 和 Chrome */
+        -o-animation: starmove 80s linear infinite;
+        /* Opera */
+    }
+    
+    @keyframes starmove {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(-400px);
+        }
+    }

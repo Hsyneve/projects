@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background: pink;
+    }
+    
+    .base {
+       
+        width: 120px;
+        height: 120px;
+        background: #ccc;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+    }
+    
+    .base:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+    }
+    
+    .base:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+        left: 50%;
+        transform: rotate(60deg);
+        transform-origin: left center;
+    }
+    
+    .num {
+      
+        width: 120px;
+        height: 120px;
+        background: #ccc;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+        line-height: 120px;
+        text-align: center;
+    }
+    
+    .num:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+    }
+    
+    .num:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #ccc;
+        left: 50%;
+        transform: rotate(108deg);
+        transform-origin: left center;
+    }
+    
+    .numtext {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    
+    .ani {
+       
+        width: 120px;
+        height: 120px;
+        background: #ccc;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+        line-height: 120px;
+        text-align: center;
+        z-index: 0;
+    }
+    
+    .ani:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+    }
+    
+    .ani:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+        left: 50%;
+        animation: youlike 2s linear;
+        animation-fill-mode: forwards;
+        transform-origin: left center;
+    }
+    
+    @keyframes youlike {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(108deg);
+        }
+    }
+    
+    .ring {
+      
+        width: 120px;
+        height: 120px;
+        background: #f0f0f0;
+        border-radius: 60px;
+        position: relative;
+        overflow: hidden;
+        line-height: 120px;
+        text-align: center;
+        z-index: 0;
+        background-image: linear-gradient(to right, transparent 50%, #ccc 0);
+    }
+    
+    .ring:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        animation: youlike2 1s linear;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        background: #ccc;
+        transform-origin: left center;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .ring:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #f0f0f0;
+        left: 50%;
+        top: 0;
+        animation: youlike1 2s linear;
+        animation-fill-mode: forwards;
+        transform-origin: left center;
+        z-index: 1;
+    }
+    
+    .hea {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 4;
+        left: 30px;
+        top: 30px;
+        line-height: 60px;
+        text-align: center;
+    }
+    
+    @keyframes youlike1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0.5turn);
+        }
+    }
+    
+    @keyframes youlike2 {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate(0.1turn);
+        }
+    }
+    
+    .bg {
+        margin-top: 30px;
+        float: left;
+          margin-left: 30px;
+        width: 120px;
+      overflow: hidden;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>CSS3饼状图</h1>
+    <div class="bg">
+        <div class="base">
+        </div>
+        <p>Base</p>
+    </div>
+    <div class="bg">
+        <div class="num">
+            <div class="numtext">80%</div>
+        </div>
+        <p>Number</p>
+    </div>
+    <div class="bg">
+        <div class="ani">
+            <div class="numtext">30%</div>
+        </div>
+        <p>Animate</p>
+    </div>
+    <div class="bg">
+        <div class="ring">
+            <div class="hea">60%</div>
+        </div>
+        <p>Ring</p>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>

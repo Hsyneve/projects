@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_yjm5z5hrphh93sor.css">
+    <style>
+    body,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        padding: 0;
+        margin: 0;
+        font-family: "微软雅黑";
+        color: #fff;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .aside {
+        width: 250px;
+        background: #272827;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    
+    .photo {
+        margin-top: 20px;
+        margin-left: 55px;
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        background: url(imgs/1.jpg);
+        background-size: cover;
+    }
+    
+    .myname {
+        text-align: center;
+        color: #61c191;
+        font-family: "宋体";
+        font-weight: bold;
+        font-size: 40px;
+    }
+    
+    .nav li {
+        padding: 10px;
+        padding-left: 55px;
+    }
+    
+    .nav li a {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+    .contact {
+        padding-left: 35px;
+        margin-top: 70px;
+    }
+    
+    .contact ul {
+        font-size: 0;
+        -webkit-text-size-adjust: none;
+        overflow: hidden;
+    }
+    
+    .contact ul li {
+        display: inline-block;
+        margin-right: 12px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+    }
+    
+    .contact a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        line-height: 36px;
+        color: #fff;
+        font-size: 22px;
+    }
+    
+    .nav span {
+        font-size: 14px;
+        color: #999;
+    }
+    
+    .aside p {
+        font-size: 12px;
+        padding-left: 10px;
+        margin-top: 50px;
+    }
+    
+    .main {
+        padding-left: 250px;
+    }
+    
+    .worklist {
+        margin: 50px;
+        overflow: hidden;
+    }
+    
+    .works h1 {
+        color: #000;
+        padding-left: 50px;
+    }
+    
+    .worklist a {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 280px;
+        outline: 1px solid #fff;
+        overflow: hidden;
+        position: relative;
+        transition: opacity .35s, transform .35s;
+    }
+    
+    .worklist img {
+        transition: opacity .35s, transform .35s;
+    }
+    
+    .worklist h2 {
+        transition: all .35s;
+    }
+    
+    .worklist p {
+        transition: all .35s;
+        font-size: 18px;
+    }
+    
+    .worklist a::after {
+        transition: opacity .35s, transform .35s;
+        opacity: 0.3;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    
+    .worklist a:hover::after {
+        transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+    }
+    
+    .worklist a:hover img {
+        opacity: 0.35;
+        transform: scale3d(1.05, 1.05, 1);
+    }
+    
+    .worklist img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .worklist a:hover h2 {
+        transform: translateY(-50%);
+    }
+    
+    .worklist a:hover p {
+        transition-delay: 0.2s;
+        transform: translateY(25px);
+        opacity: 1;
+    }
+    
+    .bg1 {
+        background: #2bb0d4;
+    }
+    
+    .bg2 {
+        background: #4173d1;
+    }
+    
+    .bg3 {
+        background: #df464d;
+    }
+    
+    .bg4 {
+        background: #f58233;
+    }
+    
+    .bg5 {
+        background: #61c191;
+    }
+    
+    .bg6 {
+        background: #f9c427;
+    }
+    
+    .bg7 {
+        background: #009688;
+    }
+    
+    .bg8 {
+        background: #be58d0;
+    }
+    
+    .worklist h2 {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        text-align: center;
+    }
+    
+    .worklist p {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        top: 50%;
+        opacity: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="aside">
+        <div class="photo"></div>
+        <h1 class="myname">hellokity</h1>
+        <div class="nav">
+            <ul>
+                   <li><span>01</span><a href="cuteme.html">作品</a></li>
+                <li><span>02</span><a href="cuteme1.html">技能</a></li>
+                <li><span>03</span><a href="cuteme2.html">简介</a></li>
+                <li><span>04</span><a href="cuteme.html">联系</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <li><a class="iconfont" style="background: #55acee;" href="#">&#xe838;</a></li>
+                <li><a class="iconfont" style="background: #ea4c89" href="#">&#xe767;</a></li>
+                <li><a class="iconfont" style="background: #fff;color: #000" href="#">&#xe6a0;</a></li>
+                <li><a class="iconfont" style="background: #00ab6c" href="#">&#xe69f;</a></li>
+            </ul>
+        </div>
+        <p>© copyright 郝舒云,2017</p>
+    </div>
+    <div class="main">
+        <div class="works">
+            <h1>主要项目</h1>
+            <div class="worklist">
+                <a class="bg1" href="#"><img src="imgs/5.jpg" alt="">
+                    <h2>轮播插件</h2>
+                    <p>全屏轮播，无缝滚动轮播，渐变轮播等各种情况的轮播汇总</p>
+                </a>
+                <a class="bg2" href="#"><img src="imgs/63.png" alt="">
+                    <h2>音乐播放器</h2>
+                    <p>随机播放音乐，可支持频道切换，声音调节，播放进度调节，歌词同步</p>
+                </a>
+                <a class="bg3" href="#"><img src="imgs/tq.jpg" alt="">
+                    <h2>天气工具</h2>
+                    <p>nodejs制作的工具，安装后可用命令行获取所在地及天气状况</p>
+                </a>
+                <a class="bg4" href="#"><img src="imgs/999.jpg" alt="">
+                    <h2>数码商城</h2>
+                    <p>叮咚数码商城，包括首页，分类页，商品介绍页面，登录，注册页面，结算页面等</p>
+                </a>
+            </div>
+        </div>
+        <div class="works">
+            <h1>闲暇时光</h1>
+            <div class="worklist">
+                <a class="bg8" href="#"><img src="imgs/1.png" alt="">
+                    <h2>日历插件</h2>
+                    <p>vue制作的仿win10日历插件，支持日期及年月日的选择</p>
+                </a>
+                <a class="bg5" href="#"><img src="imgs/css3.jpg" alt="">
+                    <h2>音符特效,css3饼状图</h2>
+                    <p>结合css3各种特效制作的音符，加载，饼状图等效果</p>
+                </a>
+                <a class="bg6" href="#"><img src="imgs/666.jpg" alt="">
+                    <h2>stickup插件</h2>
+                    <p>导航条悬浮顶部插件，可使导航条悬浮网页顶部固定</p>
+                </a>
+                <a class="bg7" href="#"><img src="imgs/2.png" alt="">
+                    <h2>bootstrap</h2>
+                    <p>用bootstrap搭建的管理平台效果</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

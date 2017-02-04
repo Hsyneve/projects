@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_yjm5z5hrphh93sor.css">
+    <style>
+    body,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        padding: 0;
+        margin: 0;
+        font-family: "微软雅黑";
+        color: #fff;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .aside {
+        width: 250px;
+        background: #272827;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+    
+    .photo {
+        margin-top: 20px;
+        margin-left: 55px;
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        background: url(imgs/1.jpg);
+        background-size: cover;
+    }
+    
+    .myname {
+        text-align: center;
+        color: #61c191;
+        font-family: "宋体";
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .nav
+    {
+        margin-top: 20px;
+    }
+    .nav li {
+        padding: 10px;
+        padding-left: 55px;
+    }
+    
+    .nav li a {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    
+    .contact {
+        padding-left: 35px;
+        margin-top: 100px;
+    }
+    
+    .contact ul {
+        font-size: 0;
+        -webkit-text-size-adjust: none;
+        overflow: hidden;
+    }
+    
+    .contact ul li {
+        display: inline-block;
+        margin-right: 12px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+    }
+    
+    .contact a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        line-height: 36px;
+        color: #fff;
+        font-size: 22px;
+    }
+    
+    .nav span {
+        font-size: 14px;
+        color: #999;
+    }
+    
+    .aside p {
+        font-size: 12px;
+        padding-left: 10px;
+        position: absolute;
+        bottom: 10px;
+    }
+    
+    .main {
+        padding-left: 250px;
+    }
+    
+    .main h1 {
+        color: #000;
+        padding: 30px;
+
+    }
+    
+    .skills {
+        background: #f5f6f5;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .skills canvas {
+        width: 700px;
+        height: 500px;
+        transition: all 2s;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="aside">
+        <div class="photo"></div>
+        <h1 class="myname">hellokity</h1>
+        <div class="nav">
+            <ul>
+                <li><span>01</span><a href="cuteme.html">作品</a></li>
+                <li><span>02</span><a href="cuteme1.html">技能</a></li>
+                <li><span>03</span><a href="cuteme2.html">简介</a></li>
+                <li><span>04</span><a href="cuteme.html">联系</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <li><a class="iconfont" style="background: #55acee;" href="#">&#xe838;</a></li>
+                <li><a class="iconfont" style="background: #ea4c89" href="#">&#xe767;</a></li>
+                <li><a class="iconfont" style="background: #fff;color: #000" href="#">&#xe6a0;</a></li>
+                <li><a class="iconfont" style="background: #00ab6c" href="#">&#xe69f;</a></li>
+            </ul>
+        </div>
+        <p>© copyright 郝舒云,2017</p>
+    </div>
+    <div class="main">
+        <h1>技能</h1>
+        <div class="skills">
+            <canvas id="myCanvas" width="1400" height="1000"></canvas>
+        </div>
+    </div>
+    <script>
+    var c = document.getElementById("myCanvas");
+
+    var ctx = c.getContext("2d");
+    ctx.strokeStyle = "#ccc";
+    ctx.translate(0.5, 0.5);
+
+
+
+    var curR = 0;
+    var centerX = 700;
+    var centerY = 500;
+    var currentX = 0;
+    var currentY = 0;
+    var angle = 0;
+
+    var skill_data1 = [1, 0.9, 0.5, 0.8, 0.6, 0.8, 0.8, 0.8];
+    var skill_data2 = [0.8, 0.8, 0.6, 0.7, 0.7, 0.6, 0.9, 0.7];
+
+    function drawsettings(node, width, height, len, fillcolor,textfill) {
+        node.strokeStyle = fillcolor;
+        node.beginPath();
+
+        node.moveTo(width, height);
+        node.lineTo(width + len, height);
+        node.lineTo(width + len, height + len);
+        node.lineTo(width, height + len);
+        node.lineTo(width, height);
+        node.stroke();
+        node.fillStyle = fillcolor;
+        node.fill();
+        node.fillStyle = fillcolor;
+        node.font = "24px Arial";
+        node.beginPath();
+        node.fillText(textfill, width + 30, height + 20);
+
+    }
+    drawsettings(ctx, 480, 20, 20, "#2bb0d4","兴趣");
+    drawsettings(ctx, 900, 20, 20, "#61c191","能力");
+
+    function drawpic(node, radius, horn, num) {
+
+        node.strokeStyle = "#ccc";
+        angle = (Math.PI * 2 / horn);
+
+        var r = radius / num; //r是蜘蛛丝之间的间距
+        for (var i = 1; i < num + 1; i++) { //中心点不用绘制
+            curR = r * i; //当前半径
+            node.beginPath();
+            for (var j = 0; j <= horn; j++) {
+                if (j == 0) {
+                    node.moveTo(centerX + curR, centerY);
+                } else {
+                    //根据半径，计算出蜘蛛丝上每个点的坐标
+                    currentX = (centerX + curR * Math.cos(angle * j));
+                    currentY = (centerY + curR * Math.sin(angle * j));
+                    node.lineTo(currentX, currentY);
+                    node.stroke();
+                }
+            }
+        }
+    }
+
+    function drawLines(node, radius, horn) {
+        node.strokeStyle = "#ccc";
+        for (var i = 0; i <= horn; i++) {
+            node.beginPath();
+            node.moveTo(centerX, centerY);
+            currentX = (centerX + radius * Math.cos(angle * i));
+            currentY = (centerY + radius * Math.sin(angle * i));
+            node.lineTo(currentX, currentY);
+            node.stroke();
+        }
+    }
+
+    function drawRegion(node, radius, horn, linecolor, fillcolor, skill_data) {
+        node.strokeStyle = linecolor;
+        var endpoint = 0;
+        for (var i = 0; i <= horn; i++) {
+
+            currentX = (centerX + radius * Math.cos(angle * i) * skill_data[i]);
+
+            currentY = (centerY + radius * Math.sin(angle * i) * skill_data[i]);
+            if (i == 0) {
+                endpoint = currentX;
+                node.beginPath();
+                node.moveTo(currentX, currentY);
+            } else
+            if (i == horn) {
+                node.lineTo(endpoint, centerY);
+                node.stroke();
+            } else {
+                node.lineTo(currentX, currentY);
+                node.stroke();
+            }
+
+
+
+        }
+
+
+        node.fillStyle = fillcolor;
+        node.fill();
+
+
+    }
+
+    function drawText(node, radius, horn) {
+        node.fillStyle = "#000";
+        node.font = "24px Arial";
+        node.beginPath();
+        for (var i = 0; i <= horn; i++) {
+
+            currentX = (centerX + radius * Math.cos(angle * i));
+
+            currentY = (centerY + radius * Math.sin(angle * i));
+            if (i == 0) {
+                node.fillText("JAVASCRIPT", currentX + 10, currentY);
+            } else
+            if (i == 1) {
+                node.fillText("JQUERY", currentX + 10, currentY + 60);
+            } else
+            if (i == 2) {
+                node.fillText("BOOTSTRAP", currentX - 30, currentY + 30);
+            } else
+            if (i == 3) {
+                node.fillText("VUE", currentX - 60, currentY + 60);
+            } else
+            if (i == 4) {
+                node.fillText("CSS3", currentX - 100, currentY);
+            } else
+            if (i == 5) {
+                node.fillText("NODEJS", currentX - 100, currentY - 20);
+            }
+            if (i == 6) {
+                node.fillText("HTML", currentX - 30, currentY - 20);
+            } else
+            if (i == 7) {
+                node.fillText("CSS", currentX + 30, currentY - 20);
+            }
+
+            //绘制小圆点
+
+        }
+    }
+    drawpic(ctx, 400, 8, 5);
+    drawLines(ctx, 400, 8);
+    drawRegion(ctx, 400, 8, "#89cfad", "rgba(203,235,223,0.6)", skill_data2);
+    drawRegion(ctx, 400, 8, "#61c3dd", "rgba(203,231,237,0.6)", skill_data1);
+    drawText(ctx, 400, 8);
+    c.style.display = "block";
+    </script>
+</body>
+
+</html>

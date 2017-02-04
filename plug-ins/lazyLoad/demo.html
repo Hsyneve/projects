@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .imgs {
+        width: 930px;
+        margin: 0 auto;
+    }
+    
+    .imgs ul {
+        overflow: hidden;
+    }
+    
+    .imgs ul li {
+        float: left;
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    .imgs img {
+        width: 300px;
+        height: 300px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="imgs">
+        <ul>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/3.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/3.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/5.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/3.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/3.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/4.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><img src="imgs/loading.jpg" data-src="imgs/3.jpeg" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+    $('.imgs').lazyLoad();
+
+
+    });
+  
+    </script>
+</body>
+
+</html>
