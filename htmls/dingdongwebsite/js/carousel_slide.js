@@ -1,5 +1,5 @@
-  $.fn.Carousel = function() {
-      function Carousel($item) {
+  $.fn.Carousel_slide = function() {
+      function Carousel_slide($item) {
           var imgul = $item.find('.imgs');
           var imgsli = $item.find('.imgs').find('li');
           var nowli = $item.find('.icons').find('li');
@@ -25,7 +25,7 @@
           };
           this.bindEvent();
       }
-      Carousel.prototype = {
+      Carousel_slide.prototype = {
           gotonext: function(len) {
 
               var rollstatus = this.statuscollection;
@@ -128,7 +128,7 @@
           }
       };
       this.each(function(){
-         new Carousel($(this));
+         new Carousel_slide($(this));
 
       });
   };

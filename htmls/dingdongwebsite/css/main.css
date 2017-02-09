@@ -1,0 +1,252 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{border:0;
+margin:0;
+padding:0;
+font-size:12px;
+font-family:"微软雅黑";}
+input{border:none;
+outline:none;
+}
+a:hover{
+		color:red;
+		}
+a{
+	text-decoration:none;
+	color:#fff;}
+
+				
+				
+.goods_class
+{
+	position:absolute;
+	width:189px;
+    top:35px;
+    height: 325px;
+	left:0;
+	background-color:#4593fd;
+	}
+.goods_class>dl
+{
+	width:183px;
+	height:63px;
+	border-bottom:1px solid #3487f2;
+	border-top:1px solid #5aa1fe;
+	padding-left:5px;
+	
+	}
+/*	.goods_class dl:first-of-type
+	{
+		border-top:none;
+		}*/
+.goods_class>dl>dt a
+{
+	color:#fff;
+	font-size:14px;
+	margin-left:5px;
+display:inline-block;
+	
+	
+	}
+	.goods_class>dl>dt
+	{background:url(../images/2_19.jpg) 160px center no-repeat;
+	line-height:24px;
+	margin-top:10px;}
+	.goods_class dd
+	{line-height:24px;}
+.goods_class>dl>dd a
+{
+	color:#c2d9f8;
+	margin-left:5px;
+display:inline-block;
+	
+}
+
+		
+	.goods_class>dl>dt .on
+	{
+		width:48px;
+		height:20px;
+		display:inline-block;
+		background-color:#106ac0;
+		border-radius:12px;
+		
+		line-height:20px;
+		text-align:center;
+		text-decoration:underline;
+		
+		
+	
+		}
+		.goods_class  .dlon
+		{
+			background-color:#FFF;
+			border-left:1px solid #4593fd;
+			border-right:none;
+			
+			
+			
+			}
+			.goods_class  .dlon>dt
+			{background:none;
+				}
+			.goods_class .dlon .on
+			{
+				border:1px solid #a5cbfe;
+				text-decoration:none;
+				
+				}
+				.goods_class .dlon>dt>a,.goods_class .dlon>dd>a
+				{color:#000;
+					}
+.goods_detail
+{
+	background:#fff;
+	display: none;
+	position:absolute;
+	width:570px;
+	left:189px;
+	top:0;
+	border:1px solid #dddddd;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	z-index:5;
+	}
+	.goods_detail dl
+	{
+		border-bottom:1px solid #dddddd;
+		padding-top:18px;
+		padding-bottom:14px;
+	
+		}
+		.goods_detail dl dt a
+		{
+			color:#4b88da;
+			font-size:14px;
+			display:inline-block;
+			margin-left:10px;
+			
+			}
+			.goods_detail dl dd a
+			{color:#666666;
+			font-size:12px;
+			display:inline-block;
+			margin-left:10px;
+			}
+			.goods_detail dl dd a:link
+			{color:#666666;
+			}
+			.goods_detail dl dd
+			{
+				margin-left:85px;
+				margin-top:-21px;
+				line-height:24px;
+			
+				}
+				.otherlink{
+					margin-top:15px;}
+	.otherlink a
+	{
+		display:block;
+		float:left;
+		margin-left:10px;
+		padding-left:8px;
+		
+		width:105px;
+		height:26px;
+		line-height:26px;
+		font-size:12px;
+	
+		background:url(../images/arrow.jpg) 87px center #2785e6 no-repeat;
+		}
+	.vi
+	{
+		display:block;}
+		
+.computers
+{
+	width:1000px;
+			margin:0 auto;}
+.com_title
+{
+	width:100%;
+	height:75px;}
+	.t_left
+	{
+		height:75px;
+		padding-left:57px;
+		background:url(../images/2_07.jpg) left center no-repeat;
+		line-height:75px;
+		float:left;
+		color:#000;
+		font-size:24px;
+		}
+.more
+{
+	height:75px;
+	float:right;
+	line-height:75px;
+}
+	.more a
+	{	color:#000;}
+	.com_con
+	{
+		width:1000px;
+		overflow: hidden;}
+	.com_con .left_new
+	{
+		float:left;
+		width:188px;
+		height:400px;}
+.com_list
+{
+	float:left;
+	width:812px;
+	height:396px;
+	border-top:1px solid #ddd;
+	border-bottom:3px solid #ff7201;
+	}
+	.com_list li .phone
+	{text-align:center;}
+	.com_list li 
+	{
+		display:block;
+		float:left;
+		width:202px;
+		height:351px;
+		border-right:1px solid #ddd;
+	
+		
+		padding-top:45px;}
+	
+.com_list .phone p
+{text-align:center;
+font-size:16px;
+line-height:24px;}
+.com_list p.price
+{color:#ffbc9c;}
+.com_list li .phone
+{
+	height:234px;
+	border-bottom:1px solid #ddd;}
+.com_list li .mec p
+	{
+		font-size:12px;
+		}
+.com_list li .mec .mec_img
+{
+	float:left;
+	text-align:center;
+	width:104px;}
+.com_list li .mec
+{
+	padding-top:20px;}
+
+			
+
+
+	
+		
+		
