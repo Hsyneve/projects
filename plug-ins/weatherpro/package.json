@@ -1,0 +1,25 @@
+{
+  "name": "md-weather",
+  "bin": {
+    "getweather": "./bin/weather.js",
+    "getcity": "./bin/city.js"
+  },
+  "version": "1.0.5",
+  "description": "一款查询天气的小工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "hsy",
+  "license": "ISC",
+  "repository":{
+    "type":"git",
+    "url":"git+https://github.com/Hsyneve/md-weather.git"
+  },
+  "devDependencies": {
+    "yargs": "^6.5.0"
+  }
+}
