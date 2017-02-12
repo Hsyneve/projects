@@ -21,6 +21,9 @@ function getWeather(data) {
     }
 }
 
+
+
+
 $.get('http://api.jirengu.com/weather.php', (res) => {
             var resData = "";
             res.on('data', (chunk) => {

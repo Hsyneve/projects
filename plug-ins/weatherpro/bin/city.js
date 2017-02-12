@@ -7,7 +7,12 @@ function getCity(data) {
 
 
 
+
+
+
+
 $.get('http://api.jirengu.com/city.php', (res) => {
+
             var resData = "";
             res.on('data', (chunk) => {
                 resData += `${chunk}`;
