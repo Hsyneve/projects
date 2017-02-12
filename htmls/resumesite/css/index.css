@@ -44,7 +44,7 @@
          width: 140px;
          height: 140px;
          border-radius: 70px;
-         background: url(../imgs/1.jpg) 2px -5px;
+         background: url(../imgs/me.jpg) 2px -5px;
          background-size: cover;
      }
      
@@ -103,8 +103,9 @@
      .contact a:hover
     {opacity: 0.75}  
      .nav span {
-         font-size: 14px;
+         font-size: 16px;
          color: #999;
+         font-family: monospace;
      }
      
      .copy {

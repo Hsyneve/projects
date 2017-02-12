@@ -11,15 +11,15 @@
     }
     
     .carousel {
-        width: 300px;
-        height: 220px;
+        width: 450px;
+        height: 280px;
         position: relative;
         overflow: hidden;
     }
     
     .imgs {
      
-        height: 220px;
+        height: 280px;
         overflow: hidden;
         position: absolute;
         left: 0;
@@ -29,13 +29,13 @@
     .imgs li {
         display: block;
         float: left;
-        width: 300px;
-        height: 220px;
+        width: 450px;
+        height: 280px;
     }
     
     .imgs img {
-        width: 300px;
-        height: 220px;
+        width: 450px;
+        height: 280px;
     }
     
     .arrow {
