@@ -288,7 +288,9 @@
      .intro {
         
         width: 600px;
-        padding: 20px;
+        padding-bottom: 20px;
+
+        background:#3f3f3f;
      }
      
      .intro p {
