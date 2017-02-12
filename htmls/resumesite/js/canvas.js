@@ -117,7 +117,7 @@
                 node.fillText("jQuery", currentX + 10, currentY + 60);
             } else
             if (i == 2) {
-                node.fillText("BOOTSTRAP", currentX - 30, currentY + 30);
+                node.fillText("Bootstrap", currentX - 30, currentY + 30);
             } else
             if (i == 3) {
                 node.fillText("Vue.js", currentX - 60, currentY + 60);

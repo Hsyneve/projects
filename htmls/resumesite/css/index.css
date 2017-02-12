@@ -263,18 +263,21 @@
      }
      
      .resume {
-         color: #000;
+         color: #fff;
          background: #f5f6f5;
          padding-left: 30px;
+         background: url(../imgs/intro.jpg);
+         background-size: contain;
        
      }
      
      .resume h1 {
          padding: 30px;
+         color: #fff;
      }
      
      table {
-         color: #000;
+         color: #fff;
          padding-left: 30px;
      }
      
@@ -283,14 +286,15 @@
      }
      
      .intro {
-         width: 600px;
-         margin-top: 30px;
+        
+        width: 600px;
+        padding: 20px;
      }
      
      .intro p {
          line-height: 30px;
          text-indent: 2em;
-         color: #000;
+         color: #fff;
      }
              .nav a:hover
             {
