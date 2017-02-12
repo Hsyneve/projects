@@ -4,7 +4,7 @@
     "getweather": "./bin/weather.js",
     "getcity": "./bin/city.js"
   },
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "一款查询天气的小工具",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "license": "ISC",
   "repository":{
     "type":"git",
-    "url":"git+https://github.com/Hsyneve/md-weather.git"
+    "url":"git+https://github.com/Hsyneve/projects/tree/master/plug-ins/weatherpro"
   },
   "devDependencies": {
     "yargs": "^6.5.0"
