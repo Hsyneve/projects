@@ -5,5 +5,7 @@
 # [全屏无缝滚动轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/全屏无缝滚动轮播/demo.html)
 # [无缝滚动轮播-改变dom位置](https://hsyneve.github.io/projects/plug-ins/Carousels/无缝滚动轮播-改变dom位置/demo.html)
 使用方法：引入相应的css文件及js文件，引入jquery库，拷贝轮播的html结构代码，用如下方法即可使用插件 
-```$('.carousel').Carousel();```
+```
+$('.carousel').Carousel();
+```
 
