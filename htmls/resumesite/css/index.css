@@ -44,7 +44,7 @@
          width: 140px;
          height: 140px;
          border-radius: 70px;
-         background: url(../imgs/1.jpg);
+         background: url(../imgs/1.jpg) 2px -5px;
          background-size: cover;
      }
      
@@ -100,7 +100,8 @@
          color: #fff;
          font-size: 22px;
      }
-     
+     .contact a:hover
+    {opacity: 0.75}  
      .nav span {
          font-size: 14px;
          color: #999;
@@ -265,7 +266,7 @@
          color: #000;
          background: #f5f6f5;
          padding-left: 30px;
-         height: 100%;
+       
      }
      
      .resume h1 {
