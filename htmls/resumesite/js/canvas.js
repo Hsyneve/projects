@@ -111,22 +111,22 @@
 
             currentY = (centerY + radius * Math.sin(angle * i));
             if (i == 0) {
-                node.fillText("JAVASCRIPT", currentX + 10, currentY);
+                node.fillText("JavaScript", currentX + 10, currentY);
             } else
             if (i == 1) {
-                node.fillText("JQUERY", currentX + 10, currentY + 60);
+                node.fillText("jQuery", currentX + 10, currentY + 60);
             } else
             if (i == 2) {
                 node.fillText("BOOTSTRAP", currentX - 30, currentY + 30);
             } else
             if (i == 3) {
-                node.fillText("VUE", currentX - 60, currentY + 60);
+                node.fillText("Vue.js", currentX - 60, currentY + 60);
             } else
             if (i == 4) {
-                node.fillText("CSS3", currentX - 100, currentY);
+                node.fillText("CSS 3", currentX - 100, currentY);
             } else
             if (i == 5) {
-                node.fillText("NODEJS", currentX - 100, currentY - 20);
+                node.fillText("Node.js", currentX - 100, currentY - 20);
             }
             if (i == 6) {
                 node.fillText("HTML", currentX - 30, currentY - 20);
