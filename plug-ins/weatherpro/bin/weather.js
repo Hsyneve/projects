@@ -1,4 +1,6 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
+
+
 
 var $ = require('http');
 function getWeather(data) {

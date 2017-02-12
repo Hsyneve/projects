@@ -1,8 +1,10 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
+
+
 
 var $ = require('http');
 function getCity(data) {
-    console.log("您好，您现在所在的城市为 "+data);
+    console.log("您好，您现在所在的城市是 "+data);
 }
 
 
