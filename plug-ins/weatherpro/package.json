@@ -4,7 +4,7 @@
     "getweather": "./bin/weather.js",
     "getcity": "./bin/city.js"
   },
-  "version": "1.0.13",
+  "version": "1.0.17",
   "description": "一款查询天气的小工具",
   "main": "index.js",
   "scripts": {
