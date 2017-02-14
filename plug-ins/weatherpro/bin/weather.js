@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 
-
 var $ = require('http');
 function getWeather(data) {
     if (data) {
+        debugger;
         var weathercity = "您好，您现在所在的城市为 " + data.results[0].currentCity+"\n";
         var weatherdegree = "";
         for (var i in data.results[0].index) {
@@ -27,11 +27,13 @@ function getWeather(data) {
 
 
 $.get('http://api.jirengu.com/weather.php', (res) => {
+    res.setEncoding('utf8');
             var resData = "";
             res.on('data', (chunk) => {
                 resData += `${chunk}`;
             });
             res.on("end", function() {
+               
                     getWeather(JSON.parse(resData));
                     });
 
