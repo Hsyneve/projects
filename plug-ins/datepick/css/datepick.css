@@ -6,6 +6,18 @@
         text-decoration: none;
         color: #fff;
     }
+    #dateinput
+    {
+        margin: 30px;
+        width:200px;
+        padding-left: 20px;
+        height:50px;
+        border:1px solid #37958f;
+        border-radius: 5px;
+        font-size: 20px;
+        line-height: 50px;
+
+    }
     .fade-enter-active{
 transition: opacity .5s
     }
@@ -18,7 +30,7 @@ transition: opacity .5s
     }
 
     .datepick {
-        margin: 50px auto;
+        margin: 0 auto;
         width: 350px;
         padding: 15px;
         height: 400px;
