@@ -62,10 +62,10 @@
 
           },
           rollStart: function() {
-              var _this = this;
+             var _this = this;
               this.statuscollection.setTime = setInterval(function() {
-                  _this.gotonext(1);
-              }, 3000);
+                _this.gotonext(1);
+            }, 3000);
 
           },
           bindEvent: function() {
