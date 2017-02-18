@@ -133,8 +133,8 @@
      }
      
      .skills canvas {
-         width: 700px;
-         height: 500px;
+         width: 70%;
+       
          transition: all 2s;
          margin: 0 auto;
          padding-top: 100px;
@@ -338,6 +338,7 @@
  {
     width: 100%;
     margin-bottom: 50px;
+    height: 175px;
  }
          .navdetails
          {
@@ -452,9 +453,7 @@
          {
             width: 100%;
          }
-         .skills canvas {
-         width: 600px;
-         height: 400px;
+        .skills canvas{
+           width: 100%;}
         
-     }
 
