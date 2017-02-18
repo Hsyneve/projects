@@ -308,7 +308,7 @@
   {
     opacity: 0.75;
   }
-     @media screen and (max-width: 770px) {
+     @media (max-width: 770px) {
          .myname {
              float: left;
              height: 50px;
