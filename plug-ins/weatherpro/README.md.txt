@@ -1,4 +1,4 @@
-
+﻿
 ## 安装
 ##```$ npm install -g md-weather```
 ## 查询本地天气命令
