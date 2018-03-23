@@ -1,5 +1,0 @@
-# [渐变轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/渐变轮播/demo.html)
-# [渐变轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/无缝滚动轮播/demo.html)
-# [渐变轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/全屏渐变轮播/demo.html)
-# [渐变轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/全屏无缝滚动轮播/demo.html)
-# [渐变轮播](https://hsyneve.github.io/projects/plug-ins/Carousels/无缝滚动轮播-改变dom位置/demo.html)
