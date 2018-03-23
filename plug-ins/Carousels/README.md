@@ -1,10 +1,10 @@
-# ÓÃjquery±àĞ´µÄÎåÖÖ²»Í¬ĞÎÊ½µÄÂÖ²¥²å¼ş£¬¿Éµã»÷ÏÂ·½Ô¤ÀÀÁ´½Ó²é¿´
-# [½¥±äÂÖ²¥](https://hsyneve.github.io/projects/plug-ins/Carousels/½¥±äÂÖ²¥/demo.html)
-# [ÎŞ·ì¹ö¶¯ÂÖ²¥](https://hsyneve.github.io/projects/plug-ins/Carousels/ÎŞ·ì¹ö¶¯ÂÖ²¥/demo.html)
-# [È«ÆÁ½¥±äÂÖ²¥](https://hsyneve.github.io/projects/plug-ins/Carousels/È«ÆÁ½¥±äÂÖ²¥/demo.html)
-# [È«ÆÁÎŞ·ì¹ö¶¯ÂÖ²¥](https://hsyneve.github.io/projects/plug-ins/Carousels/È«ÆÁÎŞ·ì¹ö¶¯ÂÖ²¥/demo.html)
-# [ÎŞ·ì¹ö¶¯ÂÖ²¥-¸Ä±ädomÎ»ÖÃ](https://hsyneve.github.io/projects/plug-ins/Carousels/ÎŞ·ì¹ö¶¯ÂÖ²¥-¸Ä±ädomÎ»ÖÃ/demo.html)
-Ê¹ÓÃ·½·¨£ºÒıÈëÏàÓ¦µÄcssÎÄ¼ş¼°jsÎÄ¼ş£¬ÒıÈëjquery¿â£¬¿½±´ÂÖ²¥µÄhtml½á¹¹´úÂë£¬ÓÃÈçÏÂ·½·¨¼´¿ÉÊ¹ÓÃ²å¼ş 
+ï»¿# ç”¨jqueryç¼–å†™çš„äº”ç§ä¸åŒå½¢å¼çš„è½®æ’­æ’ä»¶ï¼Œå¯ç‚¹å‡»ä¸‹æ–¹é¢„è§ˆé“¾æ¥æŸ¥çœ‹
+# [æ¸å˜è½®æ’­](https://hsyneve.github.io/projects/plug-ins/Carousels/æ¸å˜è½®æ’­/demo.html)
+# [æ— ç¼æ»šåŠ¨è½®æ’­](https://hsyneve.github.io/projects/plug-ins/Carousels/æ— ç¼æ»šåŠ¨è½®æ’­/demo.html)
+# [å…¨å±æ¸å˜è½®æ’­](https://hsyneve.github.io/projects/plug-ins/Carousels/å…¨å±æ¸å˜è½®æ’­/demo.html)
+# [å…¨å±æ— ç¼æ»šåŠ¨è½®æ’­](https://hsyneve.github.io/projects/plug-ins/Carousels/å…¨å±æ— ç¼æ»šåŠ¨è½®æ’­/demo.html)
+# [æ— ç¼æ»šåŠ¨è½®æ’­-æ”¹å˜domä½ç½®](https://hsyneve.github.io/projects/plug-ins/Carousels/æ— ç¼æ»šåŠ¨è½®æ’­-æ”¹å˜domä½ç½®/demo.html)
+ä½¿ç”¨æ–¹æ³•ï¼šå¼•å…¥ç›¸åº”çš„cssæ–‡ä»¶åŠ1jsæ–‡ä»¶ï¼Œå¼•å…¥jqueryåº“ï¼Œæ‹·è´è½®æ’­çš„htmlç»“æ„ä»£ç ï¼Œç”¨å¦‚ä¸‹æ–¹æ³•å³å¯ä½¿ç”¨æ’ä»¶ 
 ```
 $('.carousel').Carousel();
 ```
