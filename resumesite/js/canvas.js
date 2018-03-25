@@ -10,8 +10,8 @@
     var currentY = 0;
     var angle = 0;
 
-    var skill_data1 = [1, 0.9, 0.5, 0.8, 0.6, 0.8, 0.8, 0.8];
-    var skill_data2 = [0.8, 0.8, 0.6, 0.7, 0.7, 0.6, 0.9, 0.7];
+    var skill_data1 = [1, 0.9, 0.5, 0.8, 0.6, 1, 0.8, 0.8];
+    var skill_data2 = [0.8, 0.8, 0.6, 0.7, 0.7, 0.8, 0.95, 0.9];
 
     function drawsettings(node, width, height, len, fillcolor, textfill) {
         node.strokeStyle = fillcolor;
@@ -126,7 +126,7 @@
                 node.fillText("CSS 3", currentX - 100, currentY);
             } else
             if (i == 5) {
-                node.fillText("Node.js", currentX - 100, currentY - 20);
+                node.fillText("Angular", currentX - 100, currentY - 20);
             }
             if (i == 6) {
                 node.fillText("HTML", currentX - 30, currentY - 20);
